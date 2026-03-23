@@ -123,7 +123,7 @@ original <- migrowd_prep %>%
 # ============================================================
 
 missing_check <- data.frame(
-  Method   = c("Original", "Mode/Median", "KNN", "MICE", "Random Forest"),
+  Method   = c("Original", "Mode/Median", "KNN", "MICE"),
   Missing  = c(
     sum(is.na(original)),
     sum(is.na(migrowd_prep_clean)),
